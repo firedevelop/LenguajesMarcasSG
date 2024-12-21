@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+    <h1>Ejemplo 5: Interactividad con el DOM</h1>
+    <p id="mensaje">Texto original.</p>
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+    <script>
+        function cambiarTexto() {
+           
+			document.getElementById("mensaje").innerText =  "Texto modificado con Javascript !" );
+        }
+    </script>
+</body>
+</html>

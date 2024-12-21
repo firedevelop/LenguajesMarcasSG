@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saludo Personalizado</title>
+    <script>
+        function saludar() {
+            // Obtiene el valor del cuadro de texto
+            const nombre = document.getElementById("nombre").value;
+            // Muestra un mensaje de saludo con el nombre ingresado
+            if (nombre.trim() !== "") {
+                //trim elimina los huecos en blanco de delante y de detras 
+				alert("¡Hola, " + nombre + "! Bienvenido/a.");
+            } else {
+                alert("Por favor, ingresa un nombre.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejemplo: Saludo Personalizado</h1>
+    <p>Ingresa tu nombre:</p>
+    <!-- Cuadro de texto para ingresar el nombre -->
+    <input type="text" id="nombre" placeholder="Escribe tu nombre aquí">
+    <!-- Botón para ejecutar la función de saludo -->
+    <button onclick="saludar()">Saludar</button>
+</body>
+</html>
